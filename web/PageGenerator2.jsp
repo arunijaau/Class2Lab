@@ -22,20 +22,20 @@
                 </tr>
             </thead>
             <tbody>
-            
-        <%
-            for (int i = 0; i < 3; i++) {
-                 %> <tr> 
-                     <%
-                for (int j = 0; j < 3; j++) {
-                    %>
-                    <td> <% out.println (i + "" + j); %> </td>
+
+                <%
+                    for (int i = 0; i < 3; i++) {
+                %> <tr> 
                     <%
-                }
-%>
-               </tr> <%
-            }
-            %>
+                        for (int j = 0; j < 3; j++) {
+                    %>
+                    <td> <%=(i + "" + j)%> </td>
+                    <%
+                        }
+                    %>
+                </tr> <%
+                    }
+                %>
             </tbody>
         </table>
     </body>
